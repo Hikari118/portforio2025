@@ -1,0 +1,88 @@
+/* リセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* ヘッダー */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* designセクション */
+/* タイポグラフィセクション */
+.image-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  flex-wrap: wrap; /* スマホ対応で折り返し可 */
+}
+
+.image-row img {
+  width: 100%;
+  max-width: 30%; /* 横3枚並べるため */
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+/* webセクション */
+.webdesign-item{
+  display: flex;
+  gap: 10px;
+  width: 40vh;
+  flex-wrap: wrap; /* スマホ対応で折り返し可 */
+}
+
+.content-block {
+  padding: 4rem 2rem;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+
+.content-block:nth-child(even) {
+  background: #f0f0f0;
+}
+
+.content-block h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #333;
+  color: white;
+}

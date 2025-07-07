@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#engineering">Engineering</a></li>
+        <li><a href="#datascience">Data Science</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#others">その他</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="engineering" class="content-block">
+      <h2>Engineering</h2>
+      <p>HTML/CSS/JSやPython等を用いたwebアプリ。コードはgithubに記載。</p>
+      <div class="image-row">
+        <img src="images/sinple-mercari.png" alt="シンプルメルカリ">
+    </section>
+
+    <section id="datascience" class="content-block">
+      <h2>Data Science</h2>
+      <p>データ分析、可視化、機械学習のプロジェクトを掲載予定。</p>
+
+      <div class="pdf-embed">
+        <h3>分析レポート（2025/7）</h3>
+        <iframe src="pdfs/report_conmetition.pdf" width="100%" height="500px"></iframe>
+      </div>
+    </section>
+
+
+    <section id="design" class="content-block">
+      <h2>Design</h2>
+      <div class="design-grid">
+    
+      <!-- タイポグラフィ PNG 3枚（横並び） -->
+      <div class="design-item">
+        <h3>タイポグラフィ課題制作（2024/12）</h3>
+        <div class="image-row">
+          <img src="images/A.png" alt="タイポA">
+          <img src="images/B.png" alt="タイポB">
+          <img src="images/C.png" alt="タイポC">
+        </div>
+      </div>
+
+    
+        <!-- CG制作動画 -->
+        <div class="design-item">
+          <h3>CG制作課題（2024/8）</h3>
+          <p>tool:Maya<br>キャラクター・背景モデリング</p>
+          <video width="100%" height="300" controls>
+            <source src="videos/animation.hikarihamamoto copy.mp4" type="video/mp4">
+            このブラウザでは動画が再生できません。
+          </video>
+        </div>
+
+        <!-- Webデザイン成果物（サムネイル付きリンク） -->
+        <div class="design-item">
+          <h3>Webデザイン課題（2024/8）</h3>
+          <div class="webdesign-item">
+            <img src="images/A23DC175-pc.png" alt="Webデザイン" width="500vh" >
+            <img src="images/A23DC175-sp.png" alt="Webデザイン" width="150vh" >
+          </div>
+          
+        </div>
+    
+      </div>
+    </section>
+
+    <section id="others" class="content-block">
+      <h2>その他</h2>
+      <p>インターン先でのブログ制作</p>
+      <div class="blog-link">
+        <a href="https://rakutesu.com/author/hamamoto/" target="_blank">
+          ▶ ブログ記事を読む
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hikari</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
